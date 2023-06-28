@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | OM</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: #CDC9C9;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+            
+        }
+        fieldset{
+            border: 3px solid;
+        }
+        legend{
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+            background-color: #CD853F;
+            border-radius: 5px;
+
+        }
+        #submit{
+            background-color: red;
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário de Cadastro</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="name">Nome</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="Email" name="Email" id="Email" class="inputUser" required>
+                    <label for="name">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="password" name="Senha" id="Senha" class="inputUser" required>
+                    <label for="name">Senha</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
